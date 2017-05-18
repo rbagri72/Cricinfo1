@@ -34,6 +34,9 @@ def processRequest(req):
 	output = json.loads(final.text)
 	formatg=req['result']['parameters']['format']
 	stats=req['result']['parameters']['Stats']
+	if stats="Econ"|| stats="Wkts" :
+	answer=output['data']['bowling'][formatg][stats]
+	elif stats="Runs"||stats="Ct"||stats="SR" :
 	answer=output['data']['bowling'][formatg][stats]
 
 	speech = "The player has the following stats"+" " +answer
