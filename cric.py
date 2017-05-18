@@ -37,7 +37,7 @@ def processRequest(req):
 	if stats=="Econ" or stats=="Wkts" :
 		answer=output['data']['bowling'][formatg][stats]
 	elif stats=="Runs"or stats=="Ct"or stats=="SR" :
-		answer=output['data']['bowling'][formatg][stats]
+		answer=output['data']['batting'][formatg][stats]
 
 	speech = "The player has the following stats"+" " +answer
 
