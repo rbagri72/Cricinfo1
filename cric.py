@@ -35,9 +35,9 @@ def processRequest(req):
 	formatg=req['result']['parameters']['format']
 	stats=req['result']['parameters']['Stats']
 	if stats=="Econ" or stats=="Wkts" :
-	answer=output['data']['bowling'][formatg][stats]
+		answer=output['data']['bowling'][formatg][stats]
 	elif stats=="Runs"or stats=="Ct"or stats=="SR" :
-	answer=output['data']['bowling'][formatg][stats]
+		answer=output['data']['bowling'][formatg][stats]
 
 	speech = "The player has the following stats"+" " +answer
 
@@ -54,22 +54,3 @@ if __name__ == '__main__':
     print("Starting app on port %d" % port)
 
     app.run(debug=True, port=port, host='0.0.0.0')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
