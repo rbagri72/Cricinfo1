@@ -1,0 +1,7 @@
+{
+  "name": "Cricapi Sample",
+  "description": "Get information about any player",
+  "repository": "https://github.com/rbagri72/Cricinfo1",
+  "logo": "http://xvir.github.io/img/apiai.png",
+  "keywords": ["cricinfo", "NLP", "bot"]
+}
